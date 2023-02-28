@@ -17,4 +17,5 @@ Se utilizo Html y CSS.
 Dato: el diseño del dron fue hecho por Robert Kovacs @roobidesign
 
 ------------------------------------------
-![dronaipage](https://user-images.githubusercontent.com/84105167/150869781-d8a706a9-b24d-4da1-a807-9f860367380c.png)
+
+![nodos2](https://user-images.githubusercontent.com/84105167/221872418-38a9e8a1-32ef-4113-b9da-5aa5b0b27cb6.jpg)
