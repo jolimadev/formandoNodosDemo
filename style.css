@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+/*con esto simplificamos nuestra vida bastante ya que si queremos una caja que mida 250px de esta forma tendremos la seguridad que será de la medida 
+que le hemos indicado sin importar si usamos bordes o paddings*/
+* {
+    box-sizing: border-box;  
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #000;
+}
+
+.container {
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1000px;
+}
+
+header {
+    background-image: url("./images/bgnodosimg.jpg");
+    background-size: cover; 
+    background-position: center center; /*me centro la imagen del dron de fondo sino me quedaba muy arriba*/
+    color: rgba(255, 242, 58, 0.844);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: calc(100vh - 102px); /*me permite que el view quede bien centrado y no muy arriba*/
+}
+
+.content {
+    font-size: 2rem;
+    margin: auto;
+    max-width: 100%; 
+}
+
+.content h1 {
+    color: #fafa00d9;  /*aca va el YOUR SERVICE REPAIR*/
+    margin-bottom: 0; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .logo {
+    font-size: 1rem;
+}
+nav .logo svg {
+    width: auto;
+    height: 20px;
+    background: greenyellow;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.selected {
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: #fafa00fd;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 45px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer strong {  /*el grosor de la fuente*/
+    color: rgb(248 241 9);
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 700px) { /*importante para la resolución cuando achivo, a parti de los 700px adquiero las especificaciones colocadas entre {}*/
+    .content {
+        font-size: 1.4rem;
+        margin: 2rem auto 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    nav .highlight {
+        display: none;
+        
+    }
+
+    footer ul {
+        flex-direction: column;  /*cuando se achicaba no se me centraba por eso puse eso:*/
+        justify-content: center;
+    }
+
+    footer li {
+        margin: 1rem;
+        text-align: center;  /*centramos el texto del footer y disminuimos el font size a 1rem*/
+    }
+}
