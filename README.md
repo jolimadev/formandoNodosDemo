@@ -4,6 +4,7 @@ Made it with HTML and CSS  :)
 - media queries.
 - icon of tool's from fontawesome.com 
 
+![image](https://user-images.githubusercontent.com/84105167/224492124-8d924ba1-2fe5-4d09-8fec-d074089b904d.png)
 
 -------------------------------------------------------------------------------
 
@@ -14,4 +15,5 @@ Se utilizo Html y CSS.
 
 ------------------------------------------
 
-![nodos2](https://user-images.githubusercontent.com/84105167/221872418-38a9e8a1-32ef-4113-b9da-5aa5b0b27cb6.jpg)
+![image](https://user-images.githubusercontent.com/84105167/224492169-7dfa5aff-e9fd-4423-8141-c6bfbbf2869c.png)
+
