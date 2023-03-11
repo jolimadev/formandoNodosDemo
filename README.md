@@ -3,7 +3,6 @@
 Made it with HTML and CSS  :)
 - media queries.
 - icon of tool's from fontawesome.com 
-- Inspired by @Florinpop.
 
 
 -------------------------------------------------------------------------------
@@ -12,9 +11,6 @@ Made it with HTML and CSS  :)
 Se utilizo Html y CSS.
 - Media queries.
 - El icono lo extraje de fontawesome.com
-- Inspirado por los challenges de Florinpop.
--
-Dato: el diseño del dron fue hecho por Robert Kovacs @roobidesign
 
 ------------------------------------------
 
