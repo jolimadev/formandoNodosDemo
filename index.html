@@ -9,43 +9,119 @@
     <title>Formando Nodos| DEMO LANDING</title>
 </head>
 <body>
-    <header>
-        <nav class="container"> <!--el menu de navegacion e icono pa-->
-            <div class="logo"><svg class="logonodo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"> <path d="M208 352c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176c0 38.6 14.7 74.3 39.6 103.4c-3.5 9.4-8.7 17.7-14.2 24.7c-4.8 6.2-9.7 11-13.3 14.3c-1.8 1.6-3.3 2.9-4.3 3.7c-.5 .4-.9 .7-1.1 .8l-.2 .2 0 0 0 0C1 327.2-1.4 334.4 .8 340.9S9.1 352 16 352c21.8 0 43.8-5.6 62.1-12.5c9.2-3.5 17.8-7.4 25.3-11.4C134.1 343.3 169.8 352 208 352zM448 176c0 112.3-99.1 196.9-216.5 207C255.8 457.4 336.4 512 432 512c38.2 0 73.9-8.7 104.7-23.9c7.5 4 16 7.9 25.2 11.4c18.3 6.9 40.3 12.5 62.1 12.5c6.9 0 13.1-4.5 15.2-11.1c2.1-6.6-.2-13.8-5.8-17.9l0 0 0 0-.2-.2c-.2-.2-.6-.4-1.1-.8c-1-.8-2.5-2-4.3-3.7c-3.6-3.3-8.5-8.1-13.3-14.3c-5.5-7-10.7-15.4-14.2-24.7c24.9-29 39.6-64.7 39.6-103.4c0-92.8-84.9-168.9-192.6-175.5c.4 5.1 .6 10.3 .6 15.5z"/></svg> Formando Nodos</div>
+   
+      <!-- Encabezado aquí -->
+      <header>
+        <div class="logo">
+            <a href="/">
+              <img src="./images/nodoslogo.jpg" alt="logo">
+              <span>FORMANDO NODOS</span>
+            </a>
+          </div>
+          <nav>
             <ul>
-                <li><a href="#" class="selected">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="https://www.linkedin.com/in/juanolima/">Somos</a></li>
-                <li><a href="https://www.linkedin.com/in/juanolima/">Únete</a></li>
-                <li>
-                    <a href="#" class="highlight">Hablemos</a>
-                </li>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Unete</a></li>
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Contacto</a></li>
             </ul>
-        </nav>
-        <div class="content"> <!--la parte del medio de la web pa-->
-            <div class="container">
-                <h1>Buscas un mentor ó quieres ser uno?</h1>
-                <p>Comunidad</p>
-                <a class="highlight" href="#">Link a discord</a>
-            </div>
+          </nav>
+      </header>
+      <!-- Contenido principal aquí -->
+      <section class="nodo-section">
+        <div class="nodo-firstImg"></div>
+        <div class="nodo-info">
+          <h2>¡Bienvenido a Formando Nodos!</h2>
+          <p>Somos una comunidad de mentores y aprendices dedicados a compartir conocimientos y experiencias. 
+            <br>Ofrecemos talleres gratuitos y recursos educativos para ayudarte a crecer en tu carrera profesional.</p>
+            <br>
+            <!--adjuntar link a formulario google drive-->
+            <button><a href="#">Únete</a></button> 
         </div>
-    </header>
+      </section>
+      
+    <!--SECCION TIPOS DE "MENTORIAS Y TALLERES"-->
+    <section class="mentorias-section">
+        <!-- <h2>Tipos de Mentoria y Talleres</h2> -->
+        <div class="carousel-section">
+          <div class="carousel-title">Mentorias y Talleres
+            <br>
+            <p>*chequear disponibilidad*</p>
+          </div>
+          <div class="carousel-container">
+            <div class="carousel-card">
+              <img src="./images/nodoslogo.jpg" alt="Tecnología">
+              <div class="carousel-card-content">
+                <h3>Tecnología</h3>
+                <p>En esta sección, podrás aprender sobre temas como programación, desarrollo web, bases de datos, entre otros.</p>
+                <a href="#" class="carousel-button">Ver más</a>
+              </div>
+            </div>
+            <div class="carousel-card">
+              <img src="./images/nodoslogo.jpg" alt="Finanzas">
+              <div class="carousel-card-content">
+                <h3>Finanzas</h3>
+                <p>En esta sección, podrás aprender sobre temas como inversiones, finanzas personales, contabilidad, entre otros.</p>
+                <a href="#" class="carousel-button">Ver más</a>
+              </div>
+            </div>
+            <div class="carousel-card">
+              <img src="./images/nodoslogo.jpg" alt="Recursos Humanos">
+              <div class="carousel-card-content">
+                <h3>Recursos Humanos</h3>
+                <p>En esta sección, podrás aprender sobre temas como liderazgo, gestión de equipos, cultura empresarial, entre otros.</p>
+                <a href="#" class="carousel-button">Ver más</a>
+              </div>
+            </div>
+            <div class="carousel-card">
+              <img src="./images/nodoslogo.jpg" alt="Psicología">
+              <div class="carousel-card-content">
+                <h3>Psicología</h3>
+                <p>En esta sección, podrás aprender sobre temas como inteligencia emocional, desarrollo personal, relaciones interpersonales, entre otros.</p>
+                <a href="#" class="carousel-button">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Seccion de Nosotros-->
+      <section class="about-section">
+        <div class="about-container">
+            <div class="about-container">
+                <h2>Nosotros</h2>
+                <p>Somos una comunidad de personas dedicadas a compartir conocimientos y experiencias.<br>
+                  Fundada en 2022, nuestra misión mediante el acompañamiento de jóvenes adultos, es guiarlos a crecer en sus carreras profesionales y alcanzar sus objetivos personales.</p>
+                <p>Creemos en la importancia del aprendizaje continuo y la colaboración. Nuestra comunidad está formada por profesionales de diversas industrias y campos de especialización que comparten sus conocimientos y experiencias con otros miembros de la comunidad.<br>
+                  También brindamos consejos para insertarse en el mundo laboral a recién graduados o personas buscando cómo aprender de finanzas personales, habilidades blandas y mucho más.</p>
+                <p>Si te interesa unirte a nuestra comunidad como mentor o aprendiz, ¡contáctanos!</p>
+                <button><a href="#">Contacto</a></button>
+              </div>
+      </section>
+      
+      <!--SECCION DE PODCAST-->
 
-    <footer>
-        <ul class="container"> <!--footer container pa-->
-            <li>
-                <strong>Our Location</strong>
-                <p>300 E. Street SW, Suite 5R30; Washington, DC 20546</p> <!--nasa location pa-->
-            </li>
-            <li>
-                <strong>Phone</strong>
-                <p>+69 123 456 7890</p>
-            </li>
-            <li>
-                <strong>Email</strong>
-                <p>comunidadNodos@gmail.com</p> <!--".earth" suena a un DNS futuro?-->
-            </li>
-        </ul>
-    </footer>
-</body>
+      <section class="podcast-section">
+        <div class="podcast-container">
+          <h2>Próximamente: Lanzamiento de Podcast</h2>
+          <p>Estamos emocionados de anunciar que pronto relanzaremos nuestro podcast. 
+          En cada episodio, entrevistaremos a expertos en diversas áreas para hablar sobre sus experiencias y consejos para el éxito profesional y personal.</p>
+          <p>No te pierdas el primer episodio. ¡Suscríbete a nuestro podcast para recibir actualizaciones y noticias del lanzamiento!</p>
+          <button><a href="#">Suscríbete</a></button>
+        </div>
+      </section>
+      
+
+
+
+
+
+<!--PIE DE PAGINA-->
+      <footer class="footer">
+        <div class="footer-container">
+          <p>Realizado por @jolimadev. Tu feedback nos ayuda a mejorar.</p>
+        </div>
+      </footer>
+      
+  </body>
+  
 </html>

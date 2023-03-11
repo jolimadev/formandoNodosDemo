@@ -1,130 +1,282 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+/*
+COLORES: #008c9e; #005c66;
+FONTFAMILY:font-family: 'Golos Text', sans-serif; font-family: 'Source Sans Pro';
 
-/*con esto simplificamos nuestra vida bastante ya que si queremos una caja que mida 250px de esta forma tendremos la seguridad que será de la medida 
-que le hemos indicado sin importar si usamos bordes o paddings*/
+*/
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap");
+
 * {
-    box-sizing: border-box;  
+  box-sizing: border-box;
 }
-
-body {
-    font-family: 'Titillium Web', sans-serif;
-    background-color: #000;
-}
-
-.container {
-    padding: 1rem;
-    margin: 0 auto;
-    max-width: 100%;
-    width: 1000px;
-}
-
+/*HEADER Y MENU DE NAVEGACIÔN*/
 header {
-    background-image: url("./images/bgnodosimg.jpg");
-    background-size: cover; 
-    background-position: center center; /*me centro la imagen del dron de fondo sino me quedaba muy arriba*/
-    color: rgba(255, 242, 58, 0.844);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    min-height: calc(100vh - 102px); /*me permite que el view quede bien centrado y no muy arriba*/
-}
-
-.content {
-    font-size: 2rem;
-    margin: auto;
-    max-width: 100%; 
-}
-
-.content h1 {
-    color: #fafa00d9;  /*aca va el YOUR SERVICE REPAIR*/
-    margin-bottom: 0; 
-}
-
-nav {
     display: flex;
     justify-content: space-between;
-}
+    align-items: center;
+    padding: 20px;
+    font-family: 'Golos Text', sans-serif;
+  }
 
-nav .logo {
-    font-size: 1rem;
-}
-nav .logo svg {
-    width: auto;
-    height: 20px;
-    background: greenyellow;
-}
-nav ul {
+  nav ul {
     display: flex;
-    list-style-type: none;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
     padding: 0;
-}
-
-nav li a {
-    color: white;
-    padding: 1rem;
-    text-decoration: none;
-}
-
-.selected {
-    font-weight: bold;
-}
-
-.highlight {
-    background-color: #fafa00fd;
-    color: white;
-    padding: 1rem;
-    text-decoration: none;
-    border-radius: 45px;
-}
-
-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 1rem;
-}
-
-footer ul {
+  }
+  
+  .logo {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    list-style-type: none;
-    padding: 0;
-}
-
-footer strong {  /*el grosor de la fuente*/
-    color: rgb(248 241 9);
-}
-
-footer p {
+  }
+  
+  .logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .logo img {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .logo span {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    color: #008c9e;
+    text-decoration: underline;
+  }
+  /*BODY*/
+  body {
     margin: 0;
+  }
+  
+/* IMAGEN DE LA PRIMERA SECCIÔN*/
+.nodo-section {
+    background-image: url('./images/bgnodosimg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  
+  .nodo-firstImg {
+    width: 100%;
+    height: 100%;
+  }
+  /*INFO CONTENIDO PRINCIPAL*/
+  .nodo-info {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%;
+    max-width: 800px;
+    font-family: 'Source Sans Pro';
+  }
+  /*BUTTON UNETE*/
+  button {
+    background-color: #008c9e;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  button a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  
+  button:hover {
+    background-color:#005c66;
+  }
+  /*DIVISION DE CATEGORIAS DE TALLERES*/
+  /* ESTILOS PARA LA SECCIÓN DE CARROUSEL */
+  .mentorias-section {
+    font-family: 'Source Sans Pro';
+  }
+  .carousel-section {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+  }
+  
+  .carousel-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .carousel-title p {
+    font-size: small;
+    font-weight: bold;
+  }
+  .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .carousel-card {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 20px;
+    width: 300px;
+    transition: transform 0.5s ease;
+  }
+  /*EFECTO DE LEVITAR CARDS */
+  .carousel-card:hover {
+    transform: translateY(-5px); 
+  }
+  
+  .carousel-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /*object-fit: cover asegura que la imagen se adapte al tamaño del contenedor y cubra todo el espacio disponible sin distorsionar la relación de aspecto de la imagen.*/
+  }
+  
+  .carousel-card-content {
+    padding: 20px;
+  }
+  
+  .carousel-card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-card-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #777;
 }
+/*SECCION DE ABOUT US O NOSOTROS*/
+.about-section {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  .about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .about-container h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .about-container p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .about-container button {
+    background-color: #008c9e;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .about-container button:hover {
+    background-color: #005c66;
+    cursor: pointer;
+  }
+  
+  /*FOOTER*/
+  footer {
+    background-color: #252525;
+    color: #fff;
+    padding: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+    line-height: 1; /*altura contenedora del <p> franja */
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #008c9e;
+  }
+  
+  /*SECCION DEL PODCAST*/
+  .podcast-section {
+    background-color: #f6f6f6;
+    padding: 60px 0;
+  }
+  
+  .podcast-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  button {
+    background-color: #008c9e;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  button:hover {
+    background-color: #005f6b;
+    cursor: pointer;
+  }
+  
 
-@media screen and (max-width: 700px) { /*importante para la resolución cuando achivo, a parti de los 700px adquiero las especificaciones colocadas entre {}*/
-    .content {
-        font-size: 1.4rem;
-        margin: 2rem auto 0;
-    }
 
-    nav ul {
-        flex-direction: column;
-    }
 
-    nav li:not(:last-child) {
-        margin-bottom: 1rem;
-    }
-
-    nav .highlight {
-        display: none;
-        
-    }
-
-    footer ul {
-        flex-direction: column;  /*cuando se achicaba no se me centraba por eso puse eso:*/
-        justify-content: center;
-    }
-
-    footer li {
-        margin: 1rem;
-        text-align: center;  /*centramos el texto del footer y disminuimos el font size a 1rem*/
-    }
-}
+  
